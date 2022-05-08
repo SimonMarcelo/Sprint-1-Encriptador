@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Encriptador de texto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/496e0bb4aa.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <img src="img/Logo.png" alt="Logo de Alura" class="logo">
+        </header>
+        <main>
+            <section class="input">
+                <textarea type="text" class="input-text" name="" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+                <h6 class="indicador"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</h6>
+                <div class="botones">
+                    <button type="button" onclick="btnencriptar()" class="boton-encriptar">Encriptar</button>
+                    <button type="button" onclick="btndesencriptar()" class="boton-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="output">
+                <div class="mensaje">
+                    <textarea name="textoDevuelto" class="output-text" id="textoDevuelto" cols="18" rows="13"></textarea>
+                    <button class="boton-copiar">Copiar</button>
+                </div>
+                <div class="ningun-mensaje">
+                    <img src="img/Muñeco.png" alt="Ningún mensaje" class="img-ningun-mensaje">
+                    <h2 class="h2-ningun-mensaje">Ningún mensaje fue encontrado</h2>
+                    <p class="p-ningun-mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </section>
+        </main>
+        <script src="encode.js"></script>
+        <script src="decode.js"></script>
+        <script src="copiarAlPortapapeles.js"></script>
+    </body>
+</html>

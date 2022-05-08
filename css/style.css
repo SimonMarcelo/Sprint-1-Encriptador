@@ -102,6 +102,11 @@ main{
     width: 340px;
 }
 
+.boton-copiar:active{
+    background-color: #0A3871;
+    color: #fff;
+}
+
 .ningun-mensaje{
     position: absolute;
     display: flex;
